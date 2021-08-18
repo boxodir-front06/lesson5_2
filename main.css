@@ -9,7 +9,7 @@ body, html{
     position: relative;
 }
 body{
-    background-color: blueviolet;
+    background-color: dodgerblue;
 }
 .start{
     display: inline-block;
@@ -27,32 +27,27 @@ body{
     border-radius: 400px;
     z-index: 9999;
 }
-h2{
-    color: white;
-    padding-left: 30px;
-    padding-top: 20px;
-}
 .box2{
-    width: 5px;
-    height: 30px;
+    width: 10px;
+    height: 10px;
     background-color: red;
     transition: all 2s linear; 
     background-color: white;
+    border-radius: 50%;
 }
 .start .box2{
     animation-name: back;
     animation-timing-function: ease;
     animation-duration: 2s;
     animation-iteration-count:infinite;
-    transform: translateY(20%); 
-    margin-left: 15px;
+    transform: translateY(-0px); 
+    margin: 0 auto;
 }
 @keyframes back {
-
-    50%{
-        height: 50px; 
-      }
+     50%{
+         height: 10px;
+     }
       100%{
-          transform:translateY(10%) ;background-color: blueviolet;
+          transform:translateY(50px) ;color: dodgerblue ;
       }
 }
